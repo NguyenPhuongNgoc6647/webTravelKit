@@ -1,0 +1,159 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.content{
+    width:100%;
+
+}
+.content:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*.container-slide {
+    background-image: url("../image/home/photo-1483729558449-99ef09a8c325.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*/
+.container-slide{
+    position:relative;
+}
+.wrapper--slide {
+    position:relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height:400px;
+}
+.slider {
+    width: 100%;
+    height:100%;
+}
+.slider img{
+    transition:0.8s ease ;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+img.active{
+    opacity:1;
+    visibility:visible;
+}
+#slider--btn-next,#slider--btn-prev{
+    position:absolute;
+    top:50%;
+    transform:translate(-50%);
+    width:30px;
+    height:30px;    
+    color:white; 
+    font-size:35px;
+    opacity:.5;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+#slider--btn-prev {
+    left:40px;
+}
+#slider--btn-prev:hover{
+    opacity:.8;
+}
+#slider--btn-next {
+    right:20px;
+}
+#slider--btn-next:hover {
+    opacity: .8;
+}
+.wrapper--search-form{
+    position:absolute;
+    width:50%;
+    /*height:140px;*/
+    left:5%;
+    bottom:0%;
+    
+}
+.search-form{
+    position:relative;
+}
+.wrapper--search-form--title{
+    width:80%;
+    height:40px;
+}
+.search-form--title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.search-form--title li{
+    flex-grow:1;    
+    background-color:rgba(50, 170, 214, 0.54);
+    margin:0;
+    height:100%;
+    border-right:1px solid rgba(255, 249, 249, 0.63);
+}
+.search-form--title li:last-child{
+    border-right:none;
+}
+.search-form--title li a{
+    text-align:center;
+    display:block;
+    line-height:40px;
+    font-size:13px;
+    font-weight:bold;
+        color: white;
+}
+.search-form--tab-content {
+    position:relative;
+    min-height:100px;
+
+}
+.tab-content--search-tour {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px 20px;
+    background-color: rgba(243, 241, 241, 0.72);
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border-top-right-radius:3px;
+    display:none;
+}
+.check--choose-tour:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.radio-tour-in, .radio-tour-out{
+    float:left;
+    margin-right:20px;
+}
+.check--info-tour{
+    display:flex;
+    margin-top:15px;
+}
+#choose-cost-hotel{
+    width:90%;
+}
+.search-tour-item{
+    width:25%;
+    height:35px;
+    background-color:white;
+    border:1px solid gray;
+    line-height:33px;
+    font-size:13px;
+    border-right:0;
+    float:left;
+}
+.search-tour-item:last-child{
+    border-right:1px solid gray;
+}
+.search-tour-item input{
+    width:80%;
+    border:none;
+    outline:0;
+    padding-left:5px;
+}

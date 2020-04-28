@@ -1,0 +1,216 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="webTravel.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Travel tour</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/map-4767369_960_720.png" />
+    <link href="js/font-awesome/CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/header-footer.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="header--menu-top">
+                        <div class="header--menu-top__logo">
+                            <img src="image/logo.png" />
+                        </div>
+                        <div class="header--menu-top__search">
+                            <input type="search" name="search" placeholder="Từ khóa tìm kiếm..."/>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="header--menu-top__contact">
+                            <div class="menu-top__contact">
+                                <a href="#"><i class="fa fa-phone icon-contact" aria-hidden="true"></i>0981096647</a>
+                            </div>
+                            <div class="menu-top__contact">
+                                <a href="#"><i class="fa fa-envelope icon-contact" aria-hidden="true"></i>kit@travel.com.vn</a>
+                            </div>
+                        </div>
+                        <div class="header--menu-top__sign">
+                            <a href="#">Đăng ký </a>/
+                            <a href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                    <div class="header--menu-main">
+                        <ul class="menu-main">
+                            <li>
+                                <a class="menu-main_item" href="#">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a class="menu-main_item" href="#">TOUR TRONG NƯỚC<i class="fa fa-angle-up icon-drop" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a class="menu-main_item" href="#">TOUR NƯỚC NGOÀI<i class="fa fa-angle-up icon-drop" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a class="menu-main_item" href="#">DỊCH VỤ TOUR<i class="fa fa-angle-up icon-drop" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a class="menu-main_item" href="#">BLOG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div class="content">
+
+                    </div>
+                </asp:ContentPlaceHolder>
+                <div class="footer">
+                    <div class="footer--logo">
+                        <a href="#">
+                            <img src="image/logo.png" />
+                        </a>
+                    </div>
+                    <div class="footer--panel">
+                        <div class="footer--panel__item">
+                            <h3 class="footer--panel__title">Công ty TNHH TravelKit Việt Nam</h3>
+                            <ul class="item-widget">
+                                <li>Hà Nội: 024 7109 9999</li>
+                                <li>Hồ Chí Minh: 028 7109 9998</li>
+                                <li>Văn phòng Hà Nội: Tầng 4, tòa nhà GP Invest, 170 Đê La Thành, Đống Đa</li>
+                                <li>Văn phòng HCM: Tầng 5, tòa nhà HDTC, số 36 Bùi Thị Xuân, Q.1</li>
+                            </ul>
+                            <ul class="item-widget">
+                                <li>Số ĐKKD: 0105983269 cấp ngày 30/08/2012</li>
+                                <li>Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</li>
+                                <li>Lĩnh vực kinh doanh: Đại lý du lịch</li>
+                                <li>Địa chỉ tên miền: TravelKit.vn</li>
+                            </ul>
+                            <ul class="item-widget">
+                                <li>Tài khoản ngân hàng số: 0021000266617</li>
+                                <li>Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank) - Sở giao dịch</li>
+                                <li>Chủ tài khoản: Công ty TNHH TravelKit Việt Nam</li>
+                            </ul>
+                        </div>
+                        <div class="footer--panel__item">
+                            <h3 class="footer--panel__title">QUY ĐỊNH DÀNH CHO WEBSITE TMĐT BÁN HÀNG –
+                                DỊCH VỤ ĐẶT PHÒNG</h3>
+                            <ul class="item-widget">
+                                <li>
+                                    <a href="#">Chính sách và quy định chung</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy định về thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy định về xác nhận thông tin đặt phòng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách về hủy đặt phòng và hoàn trả tiền</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách bảo mật thông tin</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/home/logo-dathongbao.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="footer--panel__title">
+                                QUY ĐỊNH CHO SÀN GDTMĐT - DỊCH VỤ ĐẶT PHÒNG VÀ DỊCH VỤ ĐẶT TOUR DU LỊCH
+                            </h3>
+                            <ul class="item-widget">
+                                <li>
+                                    <a href="#">Quy chế hoạt động</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quy trình giải quyết tranh chấp, khiếu nại</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/home/logo-dadangki.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer--panel__item">
+                            <h3 class="footer--panel__title">
+                                KHÁCH SẠN TẠI VIỆT NAM
+                            </h3>
+                            <p class="footer--panel__hotel-list">
+                                <a href="#">A </a>-
+                                <a href="#"> B </a>-
+                                <a href="#"> D </a>-
+                                <a href="#"> E </a>-
+                                <a href="#"> F </a>-
+                                <a href="#"> G </a>-
+                                <a href="#"> H </a>-
+                                <a href="#"> I </a>-
+                                <a href="#"> J </a>-
+                                <a href="#"> K </a>-
+                                <a href="#"> L </a>-
+                                <a href="#"> M </a>-
+                                <a href="#"> N </a>-
+                                <a href="#"> O </a>-
+                                <a href="#"> P </a>-
+                                <a href="#"> Q </a>-
+                                <a href="#"> R </a>-
+                                <a href="#"> S </a>-
+                                <a href="#"> T </a>-
+                                <a href="#"> U </a>-
+                                <a href="#"> V </a>-
+                                <a href="#"> W </a>-
+                                <a href="#"> X </a>-
+                                <a href="#"> Y </a>-
+                                <a href="#"> Z </a>-
+                                <a href="#"> Khách sạn theo khu vực </a>
+                            </p>
+                             <h3 class="footer--panel__title">
+                               Khách hàng và đối tác
+                            </h3>
+                            <ul class="item-widget">
+                                <li>
+                                    <a href="#">Tích lũy Vpoint</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đăng nhập HMS</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tuyển dụng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <h3 class="footer--panel__title">
+                                TẢI MOBILE APP: TRAVELKIT
+                            </h3>
+                            <ul class="footer--panel__mobile-app">
+                                <li>
+                                    <a href="#">
+                                        <img class='mobile-app' src="image/home/app-store.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="mobile-app" src="image/home/logo-ggPlay.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="footer--panel__title">
+                                KẾT NỐI VỚI TRAVELKIT
+                            </h3>
+                            <ul class="footer--panel__media">
+                                <li><a href="#"><i class="fa fa-facebook-official footer--icon-media" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square footer--icon-media" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram footer--icon-media" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
