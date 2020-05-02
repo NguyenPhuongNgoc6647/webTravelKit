@@ -89,6 +89,7 @@
     <Content Include="js\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="js\font-awesome\HELP-US-OUT.txt" />
     <Content Include="js\jquery-3.4.1.min.js" />
+    <Content Include="js\search-form.js" />
     <Content Include="js\slide-banner.js" />
     <Content Include="Web.config" />
   </ItemGroup>

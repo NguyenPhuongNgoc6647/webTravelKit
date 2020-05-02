@@ -24,16 +24,16 @@
                 <div class="search-form">
                     <div class="wrapper--search-form--title">
                         <ul class="search-form--title">
-                            <li>
+                            <li class="light-color">
                                 <a id='search-form--title__search-tour' href="#"><i class="fa fa-umbrella" aria-hidden="true"></i>Tìm tour</a>
                             </li>
-                            <li>
+                            <li class="light-color">
                                 <a id='search-form--title__search-hotel' href="#"><i class="fa fa-bed" aria-hidden="true"></i>Tìm khách sạn</a>
                             </li>
-                            <li>
+                            <li class="light-color">
                                 <a id='search-form--title__search-ticket' href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Tìm vé máy bay</a>
                             </li>
-                            <li>
+                            <li class="light-color">
                                 <a id='search-form--title__search-car' href="#"><i class="fa fa-car" aria-hidden="true"></i>Xe du lịch</a>
                             </li>
                         </ul>
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content--search-tour">
+                        <div class="tab-content--search-tour active-search">
                             <div class="search-tour-item">
                                 <input type="text" name="address-start" placeholder="Chọn địa điểm" />
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -143,7 +143,11 @@
 
             </div>
         </div>
+        <div class="">
+
+        </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slide-banner.js"></script>
+    <script src="js/search-form.js"></script>
 </asp:Content>
