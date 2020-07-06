@@ -25,4 +25,5 @@ $(document).ready(function () {
         $('.tab-content--search-tour').eq(x).addClass('active-search');
         return false;
     })
+   
 })
